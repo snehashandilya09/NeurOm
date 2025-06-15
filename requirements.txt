@@ -1,4 +1,3 @@
-# In your requirements.txt
 streamlit
 langchain
 langchain-community
@@ -7,9 +6,7 @@ langchain-chroma
 google-generativeai
 pypdf
 python-dotenv
-chromadb # Keep this, as langchain-chroma will pull it in
-opentelemetry-api
-opentelemetry-sdk
-opentelemetry-exporter-otlp-proto-grpc
-protobuf==3.20.3 # Or protobuf==3.20.0 or protobuf<4
-# ... other packages
+chromadb >=0.4.18 # Ensure a recent version of chromadb
+duckdb >=0.9.2   # Add duckdb
+duckdb-engine  # Add duckdb-engine
+protobuf==3.20.3
