@@ -1,11 +1,15 @@
-langchain
-langchain_community
-langchain-google-genai
-python-dotenv
+# In your requirements.txt
 streamlit
-langchain_experimental
-sentence-transformers
-langchain_chroma
-langchainhub
+langchain
+langchain-community
+langchain-google-genai
+langchain-chroma
+google-generativeai
 pypdf
-rapidocr-onnxruntime
+python-dotenv
+chromadb # Keep this, as langchain-chroma will pull it in
+opentelemetry-api
+opentelemetry-sdk
+opentelemetry-exporter-otlp-proto-grpc
+protobuf==3.20.3 # Or protobuf==3.20.0 or protobuf<4
+# ... other packages
